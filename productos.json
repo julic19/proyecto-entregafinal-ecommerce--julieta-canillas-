@@ -1,0 +1,7 @@
+[
+    { "id": 1, "nombre": "Tabla KRAV", "descripcion": "Fabricada con 7 capas de madera de maple canadiense, prensadas en frío para lograr máxima resistencia y respuesta.", "precio": 74900.00, "imgRuta": "imagenes/tabla_krav.png" },
+    { "id": 2, "nombre": "Zapatillas KRAV Desliz", "descripcion": "Hechas con gamuza reforzada y suela antideslizante de caucho natural.", "precio": 102500.00, "imgRuta": "imagenes/zapas_krav.png" },
+    { "id": 3, "nombre": "Ejes KRAV Eje Firme", "descripcion": "Ejes livianos pero resistentes, con base de metal forjado y eje de titanio. Aportan buena estabilidad en saltos y giros.", "precio": 58200.00, "imgRuta": "imagenes/ejes.png" },
+    { "id": 4, "nombre": "Ruedas KRAV Estática", "descripcion": "Ruedas de poliuretano duro (101A) ideales para superficies lisas y rampas. Mantienen un rebote firme y controlado.", "precio": 31700.00, "imgRuta": "imagenes/ruedas_krav.png" },
+    { "id": 5, "nombre": "Remera KRAV Sin Reglas", "descripcion": "Remera de algodón grueso, corte suelto estilo skater, con estampado “Sin Reglas” en el frente.", "precio": 26900.00, "imgRuta": "imagenes/remera_krav.png" }
+]

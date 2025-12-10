@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krav</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="scriptfinal.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <figure id="logokrav">
+            <img src="imagenes/logo_krav.png" alt="logo Krav">
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="inicio">
+            <h1>Krav</h1>
+            <p id="parrafo-intro">Con nosotros patinás cómo quieras y dónde quieras </p>
+            <div class="botones">
+                <a href="#productos" class="boton-verde">Conocé más</a>
+            </div>
+
+        </div>
+
+
+        <section class="productos" id="productos">
+            <h2>Productos</h2>
+            <div class="contenedorProductos contenedor cont-productos">
+
+            </div>
+            <!--
+                <div class="contenedor cont-productos">
+                <article>
+                    <figure>
+                        <img src="imagenes/tabla_krav.png" alt="Tabla de skate Krav">
+                    </figure>
+
+                    <h3>Tabla KRAV - Edición Callejera </h3>
+                    <p>Fabricada con 7 capas de madera de maple canadiense, prensadas en frío para lograr máxima
+                        resistencia y respuesta. </p>
+                    <p class="precio">$74.900</p>
+                    <button class="boton-verde">Agregar al carrito <i class="fa-solid fa-cart-shopping"></i></button>
+
+
+
+                </article>
+                <article>
+                    <figure>
+                        <img src="imagenes/zapas_krav.png" alt="Zapatillas gris">
+                    </figure>
+                    <h3>Zapatillas “KRAV Desliz” - Gris Humo </h3>
+                    <p>Hechas con gamuza reforzada y suela antideslizante de caucho natural. </p>
+                    <p class="precio">$102.500</p>
+                    <button class="boton-verde">Agregar al carrito <i class="fa-solid fa-cart-shopping"></i></button>
+                </article>
+                <article>
+                    <figure>
+                        <img src="imagenes/ejes.png" alt="Ejes de skate">
+                    </figure>
+                    <h3>Ejes “KRAV Eje Firme 5.5” - Núcleo Titanio </h3>
+                    <p>Ejes livianos pero resistentes, con base de metal forjado y eje de titanio. Aportan buena
+                        estabilidad en saltos y giros. </p>
+                    <p class="precio">$58.200</p>
+                    <button class="boton-verde">Agregar al carrito <i class="fa-solid fa-cart-shopping"></i></button>
+                </article>
+                <article>
+                    <figure>
+                        <img src="imagenes/ruedas_krav.png" alt="Ruedas Krav">
+                    </figure>
+                    <h3>Ruedas “KRAV Estática 53mm” </h3>
+                    <p>Ruedas de poliuretano duro (101A) ideales para superficies lisas y rampas. Mantienen un rebote
+                        firme y controlado. </p>
+                    <p class="precio">$31.700</p>
+                    <button class="boton-verde">Agregar al carrito <i class="fa-solid fa-cart-shopping"></i></button>
+                </article>
+                <article>
+                    <figure>
+                        <img src="imagenes/remera_krav.png" alt="Remera Krav">
+                    </figure>
+                    <h3>Remera “KRAV Sin Reglas” - Edición Limitada</h3>
+                    <p>Remera de algodón grueso, corte suelto estilo skater, con estampado “Sin Reglas” en el frente.
+                    </p>
+                    <p class="precio">$26.900</p>
+                    <button class="boton-verde">Agregar al carrito <i class="fa-solid fa-cart-shopping"></i></button>
+                </article>
+            </div>
+            -->
+            
+        </section>
+
+
+        
+       
+        <section id="carrito" class="carrito contenedor">
+            <div class="d-flex gap-2 mb-3">
+                <h2>
+                    Carrito de compras
+                </h2>
+                <span class="badge text-bg-secondary position-relative">
+                    <i class="fa-solid fa-cart-shopping mt-2 fs-6"></i>
+                    <span class="contador position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info">0</span>
+                </span>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul class="list-group">
+
+                    </ul>
+                </div>
+            </div>
+            <button class="vaciarCarrito boton-verde" type="button">Vaciar carrito</button>
+
+        </section>
+
+        <section class="reseñas" id="reseñas">
+            <h2>Reseñas</h2>
+            <div class="contenedor cont-reseñas">
+                <article>
+                    <p>
+                        Tablas de calidad!! Olvídense de que se rompan al primer salto
+                    </p>
+                    <figure>
+                        <img src="imagenes/resena-1.jpg" alt="Hombre joven">
+                    </figure>
+                    <h3>
+                        Pedro Toledano
+                    </h3>
+                </article>
+                <article>
+                    <p>
+                        La relación calidad precio es increíble. 100% recomendados
+                    </p>
+                    <figure>
+                        <img src="imagenes/resena-2.jpg" alt="Mujer joven">
+                    </figure>
+                    <h3>
+                        Ana Casani
+                    </h3>
+                </article>
+                <article>
+                    <p>
+                        Siempre compro acá mis ruedas. Nunca fallan
+                    </p>
+                    <figure>
+                        <img src="imagenes/resena-3.jpg" alt="Mujer joven">
+                    </figure>
+                    <h3>
+                        Sofía Mansilla
+                    </h3>
+                </article>
+            </div>
+        </section>
+
+        <section class="nosotros" id="nosotros">
+            <h2>Sobre nosotros</h2>
+            <div class="cont-nosotros contenedor">
+                <div class="videotuto">
+                    <video controls muted>
+                        <source src="videos/krav.mp4" type="video/mp4">
+
+                        <track src="videos/nuevos_subs.vtt" kind="subtitles" srclang="es" label="Español" default>
+                        </track>
+                    </video>
+
+
+                    <!--<video controls muted>
+
+                    <source src="videos/tutorial-armado.mp4" type="video/mp4">
+
+                    <track src="videos/spanish.vtt" kind="subtitles" srclang="es" label="Español" default>
+                    </track>
+                </video>
+                -->
+
+                </div>
+                <div class="historia">
+                    <h3>Conocenos</h3>
+                    <p>KRAV empezó en Buenos Aires con una idea simple: hacer productos de skate buenos, accesibles y
+                        con identidad local. Todo nació entre amigos que patinaban juntos y se cansaron de no encontrar
+                        lo que buscaban en las tiendas grandes.
+
+                        Empezamos armando tablas y ropa para nosotros, y de a poco más gente se fue sumando. Hoy
+                        seguimos con el mismo espíritu: fabricar cosas que duren, con diseños pensados por y para
+                        skaters.
+
+                        KRAV no busca aparentar. Nos gusta lo real, lo que se usa en la calle todos los días. Por eso
+                        cada producto que sacamos está pensado para acompañar la forma de vivir el skate en la ciudad.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="contacto" id="contacto">
+            <h2>Contacto</h2>
+            
+            <div class="contenedor">
+                <h3>Preguntanos lo que quieras</h3>
+                <form action="https://formspree.io/f/mvgwrznn" method="POST">
+                    <div id="divform">
+                        <fieldset>
+                        <legend>Información Personal</legend>
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Perez">
+                        </div>
+
+                        <div>
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" placeholder="Ej: juanperez@mail.com">
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Motivo y Mensaje</legend>
+
+                        <label for="motivo">Motivo:</label>
+                        <select id="motivo" name="motivo">
+                            <option value="">-- Seleccioná una opción --</option>
+                            <option value="consulta">Consulta</option>
+                            <option value="soporte">Soporte</option>
+                            <option value="otros">Otros</option>
+                        </select>
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea>
+                    </fieldset>
+                    </div>
+                    
+
+                    <section>
+                        <button class="boton-verde" type="submit">Enviar</button>
+                        <button class="boton-verde" type="reset">Limpiar</button>
+                    </section>
+
+
+                </form>
+                <!--
+                <table>
+                    <caption>Comentarios de clientes</caption>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Nombre</th>
+                            <th rowspan="2">Correo</th>
+                            <th colspan="2">Comentario</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Mensaje</td>
+                            <td>Respuesta</td>
+                        </tr>
+                        <tr>
+                            <td>Mateo</td>
+                            <td>m@gmail.com</td>
+                            <td>hola! abren mañana sábado?</td>
+                            <td>¡Hola Mateo! Estamos abiertos de lunes a sábados de 10hs a 20hs.</td>
+                        </tr>
+                        <tr>
+                            <td>Juliana</td>
+                            <td>j@gmail.com</td>
+                            <td>buen dia, les quedan skates violetas?</td>
+                            <td>¡Hola Juliana! Sí, tenemos en stock.</td>
+                        </tr>
+                        <tr>
+                            <td>Lucas</td>
+                            <td>l@gmail.com</td>
+                            <td>que tal? arreglan tablas?</td>
+                            <td>¡Hola Lucas! Sí, arreglamos.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                -->
+                <h3>Ubicación</h3>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.4883427663754!2d-58.422854823393706!3d-34.56650805553555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5a1b2f9f47f%3A0x5c9a708b87c6e07a!2sSkatepark%20Plaza%20Haiti!5e0!3m2!1ses-419!2sar!4v1757460626325!5m2!1ses-419!2sar"
+                    width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                
+            </div>
+
+            </div>
+
+            
+
+
+        </section>
+    </main>
+    <footer>
+        <p>© 2025. Krav. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

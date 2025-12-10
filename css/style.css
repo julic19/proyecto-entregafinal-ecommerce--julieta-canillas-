@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Flex", sans-serif;
+    background: #ffffff;
+    background-image: linear-gradient(180deg, rgb(255, 255, 255) 50%, rgba(209, 205, 205, 1) 100%);
+
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+ul,
+ol,
+li,
+figure,
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header ...................................................... */
+header {
+    background-color: rgb(17, 17, 17,0.9);
+    padding: 0.5em;
+    font-family: "Saira Stencil One", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+}
+
+#logokrav {
+    width: 200px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+header nav li {
+    margin-block: 0.5em;
+    text-align: center;
+}
+
+header nav li a,
+.boton-verde {
+    background-color: rgb(209, 188, 131);
+    padding: 0.5em;
+    color: black;
+    font-weight: bold;
+    border-radius: 15px;
+    text-transform: uppercase;
+    border: none;
+    font-family: "Saira Stencil One", sans-serif;
+
+
+}
+
+header nav li a:hover,
+.boton-verde:hover {
+    background-color: white;
+    padding: 0.5em;
+    color: black;
+    font-weight: bold;
+    border-radius: 15px;
+    text-transform: uppercase;
+    border: 1px solid rgb(209, 188, 131);
+
+}
+
+/* Main ...................................................... */
+
+/* INICIO ...................................................... */
+h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 4.5em;
+    margin-block-start: 1em;
+    text-transform: uppercase;
+    font-family: "Saira Stencil One", sans-serif;
+}
+
+#parrafo-intro {
+    text-align: center;
+    font-weight: 600;
+}
+
+.botones {
+    text-align: center;
+    margin-block: 2em;
+}
+
+/*.inicio{
+    background-image: url();
+    background-position: bottom center;
+    background-size: cover;
+    height: 40dvh;
+    color: white;
+}*/
+
+.inicio {
+    position: relative;
+    background: #dfe0e0;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inicio h1,
+.inicio p,
+.inicio div {
+    position: relative;
+    z-index: 2;
+}
+
+.inicio::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.4;
+    background-image: url('../imagenes/banner-1.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+/* Secciones generales ...................................................... */
+.productos h2,
+.nosotros h2 {
+    background-color: rgb(67, 206, 79);
+
+}
+
+.reseñas h2,
+.contacto h2 {
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+
+.productos h2,
+.reseñas h2,
+.nosotros h2,
+.contacto h2 {
+    text-transform: uppercase;
+    padding: 1em;
+    margin-block: 2em;
+    font-family: "Saira Stencil One", sans-serif;
+    box-shadow: -1px 13px 5px 0px rgba(112, 112, 112, 0.69);
+    -webkit-box-shadow: -1px 13px 5px 0px rgba(112, 112, 112, 0.69);
+    -moz-box-shadow: -1px 13px 5px 0px rgba(112, 112, 112, 0.69);
+
+}
+
+/* Productos ...................................................... */
+.productos {
+    margin-bottom: 1em;
+}
+
+.cont-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.cont-productos article {
+    width: 300px;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto auto;
+    background-color: #dad8d87e;
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 0px rgba(17, 17, 17, 0.377);
+}
+
+.cont-productos article:hover {
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(67, 206, 79, 0.9);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(67, 206, 79, 0.9);
+    box-shadow: 0px 0px 15px 0px rgba(67, 206, 79, 0.9);
+    transition: 0.1s ease 0.2s;
+}
+
+.cont-productos figure {
+    aspect-ratio: 1;
+    margin-bottom: 1em;
+    overflow: hidden;
+    object-fit: cover;
+
+}
+
+.cont-productos article h3,
+.carrito h2 {
+    font-family: "Saira Stencil One", sans-serif;
+    font-weight: 800;
+}
+
+.cont-productos img {
+    object-fit: cover;
+}
+
+.cont-productos .precio {
+    color: rgb(67, 206, 79);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.cont-productos a {
+    align-items: baseline;
+    width: 200px;
+    font-size: 0.9em;
+}
+
+.card a {
+    color: rgb(53, 48, 35);
+}
+.card a:hover {
+    color: rgb(29, 99, 1);
+}
+.carrito {
+
+    background-color: rgb(67, 206, 79);
+    padding: 1em;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.carrito h2 {
+    font-size: 1.7rem;
+}
+
+.list-group {
+    margin-block: 1em;
+}
+
+/* Reseñas ...................................................... */
+.cont-reseñas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 1em;
+    justify-items: center;
+}
+
+.cont-reseñas article {
+    width: 17rem;
+    background-color: #dad8d87e;
+    padding: 1em;
+    display: grid;
+    justify-items: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 0px rgba(17, 17, 17, 0.377);
+}
+
+.cont-reseñas article:hover {
+    transition: 0.1s ease 0.2s;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(67, 206, 79, 0.9);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(67, 206, 79, 0.9);
+    box-shadow: 0px 0px 15px 0px rgba(67, 206, 79, 0.9);
+}
+
+.cont-reseñas article p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.cont-reseñas article img {
+    width: 5rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.cont-reseñas article h3 {
+    font-size: 0.9em;
+}
+
+/* Sobre nosotros ...................................................... */
+.historia {
+    margin: auto;
+    padding: 2em;
+    font-size: 1.1em;
+
+}
+
+.videotuto {
+    width: 90%;
+    margin: auto;
+}
+
+/* Contacto ...................................................... */
+.contacto h3 {
+    padding-left: 1em;
+}
+
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 0.5em;
+    text-align: center;
+
+}
+
+fieldset {
+    border: none;
+    margin-block: 1em;
+}
+
+fieldset div {
+    padding-block: 0.5em;
+}
+
+legend,
+caption {
+
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+label {
+    display: block;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px black solid;
+    padding: 0.5em;
+}
+
+select {
+    background-color: rgb(17, 17, 17);
+    color: #ffffff;
+    padding: 0.5em;
+    margin-block: 1em;
+}
+
+table {
+
+    margin: 1em;
+    padding: 1em;
+
+}
+
+thead {
+
+    background-color: rgb(17, 17, 17);
+    color: #ffffff;
+    border-radius: 50px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #dad8d8;
+}
+
+th {
+    padding: 0.5em;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    max-width: 50rem;
+    padding-block: 1em;
+}
+
+/* footer ...................................................... */
+footer {
+    background-color: black;
+    color: whitesmoke;
+    padding-block: 1em;
+
+}
+
+footer p {
+    font-size: 0.75em;
+}
+
+
+/*MEDIA*/
+
+@media (min-width: 600px) {
+    .cont-reseñas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    input,
+    textarea {
+        max-width: 30rem;
+        width: 100%;
+    }
+
+    .videotuto {
+        max-width: 50dvh;
+
+    }
+
+    .carrito {
+        max-width: 500px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .contenedor {
+        margin: auto;
+        max-width: 90%;
+    }
+
+    .cont-reseñas {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .cont-nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .carrito {
+        max-width: 600px;
+    }
+
+    .inicio {
+        
+        height: 70vh;
+        
+    }
+
+    #divform {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin: auto;
+
+    }
+
+    input,
+    textarea {
+        width: 20rem;
+    }
+
+}
