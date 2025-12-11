@@ -25,7 +25,7 @@ function insertarProductos(lista) {
         //creamos el contenido del elemento. VER SI PONER MI ARTICLE Y CLASES 
         nuevoElemento.innerHTML = `
                     <figure>
-                        <img src="${productoActual.imgRuta}" alt="Tabla de skate Krav">
+                        <img src="${productoActual.imgRuta}" alt="${productoActual.nombre}">
                     </figure>
 
                     <h3>${productoActual.nombre} </h3>
